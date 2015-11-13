@@ -1,17 +1,30 @@
-<DOCTYPE html>
-<html>
-<head>
-  <% include /partials/head %>
-  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-</head>
-<body>
-  <div class= "container-fluid">
-  <div id="form">
-    <form action="submit.php" method="post">
-      <input type="text" name="textbox" value ="textbox">
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="brand-heading">Website</h1>
+                    <p class="intro-text">A demonstration of how to build websites.<br>Created with Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="content">
+    <% include home/section/main.ejs %>
+    <% include home/section/modals.ejs %>
+    <% include home/section/tabs.ejs %>
 </div>
-</body>
-</html>
+
+
+<% include templates/modals.ejs %>
+<div id="form">
+  <form action="" method="post" enctype="multipart/form-data">
+    <input type="text" name="textbox" value ="textbox">
+    <input type="submit" value="Submit">
+  </form>
+</div>

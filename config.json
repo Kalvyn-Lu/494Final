@@ -1,0 +1,6 @@
+{
+  "connections":{
+    "sqlite": "Data/db.sqlite",
+    "mongo_db":"mongodb://localhost/websiteApp"
+  }
+}
