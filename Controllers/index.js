@@ -2,6 +2,10 @@ var express = require('express');
 var formidable = require('formidable');
 var util = require('util');
 var fs = require('fs');
+
+var db = require("../Data")
+
+
 module.exports = function (config, app) {
   /* Default Route */
   app.get('/', function (req, res) {
@@ -11,6 +15,22 @@ module.exports = function (config, app) {
   app.post('/', function (req, res) {
     var form = new formidable.IncomingForm();
     form.parse(req, function (err, fields, files) {
+
+var fs = require('fs');
+fs.writeFile("test.txt", JSON.stringify(fields), function(err) {
+    if(err) {
+        return console.log(err);
+    }
+
+    console.log("The file was saved!");
+});
+
+
+
+
+
+
+
         //Store the data from the fields in your data store.
         //The data store could be a file or database or any other store based
         //on your application.
