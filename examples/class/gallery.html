@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grand List Items</title>
+    <meta name="description" content="">
+    <!-- Mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Style sheet link -->
+    <link href="css/base.css" rel="stylesheet" media="all">
+    <link href="css/style.css" rel="stylesheet" media="all">
+    <link href="css/menu.css" rel="stylesheet" media="all">
+    <link href="css/gallery.css" rel="stylesheet" media="all">
+    <link href="css/debug-media.css" rel="stylesheet" media="all">
+</head>
+<body>
+<nav class="_nav">
+    <div class="">
+        <button type="button" class="responsive-nav" onclick="toggleResponsiveMenu(this);">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <a class="" href="#">Example WebDev</a>
+    </div>
+    <ul class="nav-menu" id="main-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+<div class="container" id="main" >
+    <div class="col-lg-2">
+        <ul>
+            <li>Gallery 1</li>
+            <li>Gallery 2</li>
+            <li>Gallery 3</li>
+            <li>Gallery 4</li>
+        </ul>
+    </div>
+    <div class="col-lg-10" id="gallery">
+        <!-- Gallery Image -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12" id="gallery-wrapper">
+                <img src="images/thumb-xl.png" class="cover-image">
+            </div>
+        </div>
+        <!-- Thumbnails -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a class="thumb" href="images/thumb-xl.png"><img alt="" src="images/thumb.png"></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="thumb" href="images/thumb.png"><img alt="" src="images/thumb.png"></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="thumb" href="#"><img alt="" src="images/thumb.png"></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="thumb" href="images/thumb-xl.png"><img alt="" src="images/thumb.png"></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="thumb" href="images/thumb.png"><img alt="" src="images/thumb.png"></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="thumb" href="#"><img alt="" src="images/thumb.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer role="contentinfo">
+    <div>Page footer content</div>
+    <small>Copyright &copy; <time datetime="2015">2015</time></small>
+</footer>
+</body>
+<script src="js/gallery.js"></script>
+<script src="js/site.js"></script>
+</html>

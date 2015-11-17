@@ -1,0 +1,6 @@
+#main {
+
+    margin-top: 70px;
+}
+hr {border-bottom: 2px solid black;}
+button:focus { outline:0 !important; }

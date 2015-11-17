@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="popup-hover.js"></script>
+    <style>
+        .container{
+            width:900px;
+            margin: auto;
+        }
+        .profile-list > li {
+           display: inline-block;
+            position: relative;
+        }
+        .profile-list > li .bio {
+            display:none;
+            color:#fff;
+            position: absolute;
+            background: rgba(0,0,0,.4);
+            height: 100%;
+            width: 100%;
+            top: 0;
+            text-align: center;
+        }
+
+        .bio h3{
+            margin-top:70%;
+        }
+        .profile-list > li img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <ul class="profile-list">
+        <li>
+            <img src="img/user.png" />
+            <div class="bio">
+                <h3>Person Name</h3>
+            </div>
+        </li>
+        <li>
+            <img src="img/user.png" />
+            <div class="bio">
+                <h3>Person Name</h3>
+            </div>
+        </li>
+        <li>
+            <img src="img/user.png" />
+            <div class="bio">
+                <h3>Person Name</h3>
+            </div>
+        </li>
+        <li>
+            <img src="img/user.png" />
+            <div class="bio">
+                <h3>Person Name</h3>
+            </div>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>

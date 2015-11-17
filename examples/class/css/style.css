@@ -1,0 +1,26 @@
+.item * {
+    margin: 0;
+    padding: 0;
+}
+.list-items li {
+    display: inline-flex;
+    list-style: none;
+
+}
+.list-items-box li{
+    display:inline-block;
+    width: 40%;
+}
+.list-items-box li .item{
+    display:inline-block;
+}
+.item{
+    margin-bottom:30px;
+    display: inline-flex;
+}
+.item img{
+
+}
+.item .content{
+    width: 50%;
+}
