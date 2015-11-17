@@ -11,7 +11,7 @@ var router = express.Router();
 // });
 
 /* GET home page. */
-router.get('/teamview', function(req, res, next) {
+router.get('/', function(req, res, next) {
   var data = [bulbasaur, bulbasaur];
   res.render('teamview', { title: 'Express' });
 });
