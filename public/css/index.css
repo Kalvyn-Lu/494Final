@@ -1,0 +1,10 @@
+body{
+  background-image:url("../images/news/photo-1.jpg");
+  background-position:center;
+  background-size:cover;
+  text-align:center;
+  color:white;
+  padding-top:10%;
+  padding-bottom:10%;
+  margin-bottom:0px;
+}
