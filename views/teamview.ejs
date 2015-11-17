@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title><%= title %></title>
+  <% include partials/head %>
+  <link href="/css/index.css" rel="stylesheet"/>
+</head>
+<body>
+    <% include partials/navbar %>
+
+<%
+var abilities = [0, 0, 0, 0, 0, 0] ;
+    for (var x = 0; x < data.length; x++) {
+        var mon = data[x];
+        if (1 < mon.abilities.length) {
+            abilities[x] = Math.floor(Math.random() * mon.abilities.length);
+        }
+        var ability = mon.abilities[abilities[x]];
+        %>
+<div class="monster container-fluid">
+    <div class="row-fluid">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <img class="monsprite" src="pokeapi.co/media/img/<% =mon.id %>" alt="<% =mon.name %>">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-9">
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="monname col-xs-12 col-sm-3">#<% =mon.national_id%> <% =mon.name %></div>
+        <div class="montype col-xs-12 col-sm-3 type <% =mon.types[0].name%>type"><% =mon.types[0].name.toUpperCase() %></div>
+        <%
+        if (mon.types.length == 1) { %>
+            <div class="montype col-xs-12 col-sm-3 type"></div><%
+        <%
+        }
+        else { %>
+            <div class="montype col-xs-12 col-sm-3 type <% =data.types[1].name%>type"></div><%
+        }%>
+        <div class="monability col-xs-12 col-sm-3"><% =ability %></div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+        <%
+    }
+%>
+</body>
+</html>
