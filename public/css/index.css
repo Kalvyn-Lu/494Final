@@ -7,9 +7,6 @@ body{
 
 }
 
-#wrapper {
-    font-family:Pokemon
-}
 .intro{
   position: relative;
   top: 50%;
@@ -21,6 +18,7 @@ body{
     margin: auto;
     text-align: center;
    color: #fff;
+   font-family:Pokemon;
 }
 
 .intro .intro-body {
