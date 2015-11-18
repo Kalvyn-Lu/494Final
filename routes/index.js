@@ -8,7 +8,7 @@ router.post('/',function(req,res){
       if(err) {
           // handle err
       } else {
-          console.log(data);
+          console.log(data.abilities.length);
       }
   });
 });
