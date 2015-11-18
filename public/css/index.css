@@ -10,6 +10,18 @@ body{
 #wrapper {
     font-family:Pokemon
 }
+.intro{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    display: table;
+    height: 100%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+   color: #fff;
+}
 
 .intro .intro-body {
     display: table-cell;
@@ -17,6 +29,7 @@ body{
 }
 
 .intro .intro-body .brand-heading {
+  padding-top:100px;
 }
 
 .intro .intro-body .intro-text {
