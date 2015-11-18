@@ -7,7 +7,17 @@ body{
 
 }
 
-#wrapper {
+.intro {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    display: table;
+    height: 100%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    color: #fff;
     font-family:Pokemon
 }
 
