@@ -3,14 +3,6 @@ var pokeapi = require('pokenode');
 var async = require('async');
 var router = express.Router();
 
-// pokeapi.pokemon(1, function(err, data) {
-//     if(err) {
-//         // handle err
-//     } else {
-//         console.log(data);
-//     }
-// });
-
 function handleRequests (callback) {
     var id = Math.floor(Math.random() * 649);
     console.log("Requesting " + id);

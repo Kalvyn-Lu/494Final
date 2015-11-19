@@ -1,0 +1,37 @@
+#wrapper {
+    margin-top: 80px;
+}
+body{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5) ),
+            url("../images/index/Kanto_HGSS.png");
+    background-position:center;
+    background-size:cover;
+    text-align:center;
+    color:white;
+    padding: none;
+    margin: none;
+}
+
+.centerofpage{
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family:Pokemon;
+}
+
+.entirerow {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.centeredstuff {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

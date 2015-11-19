@@ -23,12 +23,16 @@
 </div>
 
 <%
-var abilities = [] ;
+var abilities = [];
+var abilityids = [];
 var moves = [];
     for (var x = 0; x < data.length; x++) {
         var mon = data[x];
         var i = Math.floor(Math.random() * mon.abilities.length);
         abilities.push(mon.abilities[i].name.toUpperCase());
+        abilityids.push(parseInt(
+            mon.abilities[i].resource_uri.split("/")[4]
+        ));
         moves[x] = [];
         var nummoves = 4;
         if (mon.moves.length < 4) {
@@ -57,7 +61,11 @@ var moves = [];
         <%
         }
         %>
-        <div class="monability type notype col-xs-12 col-sm-4"><%=abilities[x].toUpperCase() %></div>
+        <div class="monability type notype col-xs-12 col-sm-4">
+            <a href="/ability?id=<%=abilityids[x]%>">
+                <%=abilities[x].toUpperCase() %>
+            </a>
+        </div>
     </div>
     <div class="row">
         <%
@@ -78,6 +86,6 @@ var moves = [];
 </div>
 </body>
 
-</script>
+<script src="/public/script.js"></script>
 
 </html>
