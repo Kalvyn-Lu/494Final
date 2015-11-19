@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var news = require('./routes/news');
 var teamview = require('./routes/teamview');
 var wiki = require('./routes/wiki');
 
@@ -25,7 +24,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/news', news);
 app.use('/teamview', teamview);
 app.use('/wiki',wiki)
 
