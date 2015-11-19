@@ -1,10 +1,28 @@
-body{
+#wrapper {
+  margin-top: 100px;
+}
+
+.monster {
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Pokemon;
+}
+
+.monname {
+  font-size: 18pt;
+}
+
+body {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/index/Kanto_HGSS.png");
   background-position:center;
   background-size:cover;
+  background-attachment: fixed;
   text-align:center;
   color:white;
-
+  padding: none;
+  margin: none;
 }
 
 .intro {
@@ -18,16 +36,10 @@ body{
     margin: auto;
     text-align: center;
     color: #fff;
-    font-family:Pokemon
+    font-family:Pokemon;
 }
 
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
-}
-
-.intro .intro-body .brand-heading {
-}
-
-.intro .intro-body .intro-text {
 }

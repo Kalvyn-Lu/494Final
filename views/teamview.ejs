@@ -13,8 +13,11 @@
 </head>
 <body>
 
+  <% include partials/navbar %>
+
 
 <div id="wrapper">
+
 <%
 var abilities = [] ;
 var moves = [];
@@ -34,26 +37,29 @@ var moves = [];
 <div class="monster container-fluid">
     <div class="row-fluid">
         <div class="col-xs-12 col-sm-6 col-md-3">
-            <img class="monsprite" src="pokeapi.co/media/img/<%=mon.national_id %>.png" alt="<%=mon.name %>">
+            <img class="monsprite" src="http://pldh.net/media/pokemon/gen6/xy/001.png" alt="<%=mon.name %>">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-9">
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="monname col-xs-12 col-sm-3">#<%=mon.national_id%> <%=mon.name %></div>
-        <div class="montype col-xs-12 col-sm-3 type <%=mon.types[0].name%>type"><%=mon.types[0].name.toUpperCase() %></div>
+        <div class="monname col-xs-12">#<%=mon.national_id%> <%=mon.name %></div>
+        <div class="montype col-xs-12 col-sm-4 type <%=mon.types[0].name%>type"><%=mon.types[0].name.toUpperCase() %></div>
         <%
         if (mon.types.length == 1) { %>
-            <div class="montype col-xs-12 col-sm-3 type"></div><%
+            <div class="montype col-xs-12 col-sm-4 type notype">No Type</div><%
         }
         else { %>
-        <%}%>
-        <div class="monability col-xs-12 col-sm-3"><%=abilities[x].toUpperCase() %></div>
+            <div class="montype col-xs-12 col-sm-4 type <%=mon.types[1].name%>type"><%=mon.types[1].name.toUpperCase() %></div>
+        <%
+        }
+        %>
+        <div class="monability type notype col-xs-12 col-sm-4"><%=abilities[x].toUpperCase() %></div>
     </div>
     <div class="row">
         <%
         for (var i = 0; i < moves[x].length; i++) {
             %>
-            <div class="move col-xs-6 col-sm-3"><%=moves[x][i]%></div>
+            <div class="move col-xs-6"><%=moves[x][i]%></div>
             <%
         }%>
     </div>
