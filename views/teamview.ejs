@@ -41,7 +41,7 @@ var moves = [];
 <div class="monster container-fluid">
     <div class="row-fluid">
         <div class="col-xs-12 col-sm-6 col-md-3">
-            <img class="monsprite" src="http://pldh.net/media/pokemon/gen6/xy/001.png" alt="<%=mon.name %>">
+            <img class="monsprite" src="http://pokeapi.co/media/img/<%=mon.national_id%>.png" alt="<%=mon.name %>">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-9">
 <div class="container-fluid">
@@ -77,44 +77,6 @@ var moves = [];
 
 </div>
 </body>
-
-<script type="text/javascript">
-
-Downloadify.create('download',{
-    filename: function() { return "myteam.txt" },
-    data: function () {
-        return [
-        <%
-            for (var i = 0; i < data.length; i++) {
-                var mon = data[i];
-            %>
-                "
-                <%=mon.name%> @ Leftovers\n
-                Trait: <%=abilities[i]%>\n
-                EVs: 85 HP/ 85 Atk / 85 Def / 85 SAtk / 85 SDef / 85 Spd\n
-                Hardy Nature\n
-            <%
-                for (var m = 0; m < moves[i].length; m++) {
-                %>
-                    - <%=moves[i][m]%>\n
-                <%
-                }
-                %>"
-                <%
-            }
-        %>
-        ].join("\n");
-    },
-    onComplete: function () {
-        document.getElementById("download").innerHTML = "File downloaded!";
-    },
-    onCancel: function () {
-        document.getElementById("download").innerHTML = "Download Canceled!";
-    },
-    onError: function () {
-        document.getElementById("download").innerHTML = "Oops! Something went wrong!";
-    }
-});
 
 </script>
 
