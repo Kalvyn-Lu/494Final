@@ -46,7 +46,7 @@ var moves = [];
         <div class="montype col-xs-12 col-sm-4 type <%=mon.types[0].name%>type"><%=mon.types[0].name.toUpperCase() %></div>
         <%
         if (mon.types.length == 1) { %>
-            <div class="montype col-xs-12 col-sm-4 type notype"></div><%
+            <div class="montype col-xs-12 col-sm-4 type notype">No Type</div><%
         }
         else { %>
             <div class="montype col-xs-12 col-sm-4 type <%=mon.types[1].name%>type"><%=mon.types[1].name.toUpperCase() %></div>

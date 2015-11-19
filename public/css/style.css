@@ -84,9 +84,109 @@ h2 small{
 }
 
 .steeltype {
-  border-top-color:   #990099;
-  border-left-color:  #990099;
-  border-right-color: #660066;
-  border-bottom-color:#660066;
-  background-color:   #4d004c;
+  border-top-color:   #cccccc;
+  border-left-color:  #cccccc;
+  border-right-color: #888888;
+  border-bottom-color:#888888;
+  background-color:   #666666;
 }
+
+.bugtype {
+  border-top-color:   #00cc66;
+  border-left-color:  #00cc66;
+  border-right-color: #00994d;
+  border-bottom-color:#00994d;
+  background-color:   #006633;
+}
+
+.dragontype {
+  border-top-color:   #668cff;
+  border-left-color:  #668cff;
+  border-right-color: #3366ff;
+  border-bottom-color:#3366ff;
+  background-color:   #1a53ff;
+}
+
+.ghosttype {
+  border-top-color:   #aa00aa;
+  border-left-color:  #aa00aa;
+  border-right-color: #770077;
+  border-bottom-color:#770077;
+  background-color:   #440044;
+}
+
+.darktype {
+  border-top-color:   #444444;
+  border-left-color:  #444444;
+  border-right-color: #222222;
+  border-bottom-color:#222222;
+  background-color:   #000000;
+}
+
+.normaltype {
+  border-top-color:   #ffffff;
+  border-left-color:  #ffffff;
+  border-right-color: #aaaaaa;
+  border-bottom-color:#aaaaaa;
+  background-color:   #888888;
+}
+
+.rocktype {
+  border-top-color:   #cc6600;
+  border-left-color:  #cc6600;
+  border-right-color: #804000;
+  border-bottom-color:#804000;
+  background-color:   #4d2600;
+}
+
+.groundtype {
+  border-top-color:   #ffcc66;
+  border-left-color:  #ffcc66;
+  border-right-color: #ffaa00;
+  border-bottom-color:#ffaa00;
+  background-color:   #cc8800;
+}
+
+.fightingtype {
+  border-top-color:   #cc6600;
+  border-left-color:  #cc6600;
+  border-right-color: #994c00;
+  border-bottom-color:#994c00;
+  background-color:   #804000;
+}
+
+.psychictype {
+  border-top-color:   #ff0066;
+  border-left-color:  #ff0066;
+  border-right-color: #b30047;
+  border-bottom-color:#b30047;
+  background-color:   #99003d;
+}
+
+.icetype {
+  border-top-color:   #99ccff;
+  border-left-color:  #99ccff;
+  border-right-color: #66b2ff;
+  border-bottom-color:#66b2ff;
+  background-color:   #4da6ff;
+}
+
+.flyingtype {
+  border-top-color:   #ffb380;
+  border-left-color:  #ffb380;
+  border-right-color: #ff8533;
+  border-bottom-color:#ff8533;
+  background-color:   #ff8c1a;
+}
+
+.electrictype {
+  border-top-color:   #ffdd00;
+  border-left-color:  #ffdd00;
+  border-right-color: #ddcc00;
+  border-bottom-color:#ddcc00;
+  background-color:   #ccbb00;
+}
+
+
+
+
