@@ -27,3 +27,66 @@ h2 small{
   font-family:Pokemon;
   src: url("../fonts/Pokemon GB.ttf");
 }
+
+.type {
+  border: white 1px solid;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.notype {
+  border-top-color: #888888;
+  border-left-color: #888888;
+  border-right-color: #222222;
+  border-bottom-color: #222222;
+  background-color: #444444;
+}
+
+.grasstype {
+  border-top-color:   #33cc33;
+  border-left-color:  #33cc33;
+  border-right-color: #1e7b1e;
+  border-bottom-color:#1e7b1e;
+  background-color:   #145214;
+}
+
+.poisontype {
+  border-top-color:   #990099;
+  border-left-color:  #990099;
+  border-right-color: #660066;
+  border-bottom-color:#660066;
+  background-color:   #4d004c;
+}
+
+.firetype {
+  border-top-color:   #ff0000;
+  border-left-color:  #ff0000;
+  border-right-color: #990000;
+  border-bottom-color:#990000;
+  background-color:   #660000;
+}
+
+.watertype {
+  border-top-color:   #0066cc;
+  border-left-color:  #0066cc;
+  border-right-color: #004080;
+  border-bottom-color:#004080;
+  background-color:   #00264d;
+}
+
+.fairytype {
+  border-top-color:   #ff99cc;
+  border-left-color:  #ff99cc;
+  border-right-color: #ff66b3;
+  border-bottom-color:#ff66b3;
+  background-color:   #cc3399;
+}
+
+.steeltype {
+  border-top-color:   #990099;
+  border-left-color:  #990099;
+  border-right-color: #660066;
+  border-bottom-color:#660066;
+  background-color:   #4d004c;
+}
