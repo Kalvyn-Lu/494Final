@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var teamview = require('./routes/teamview');
 var pokemon = require('./routes/pokemon');
-var move = require('./routes/moves');
+var move = require('./routes/move');
 var ability = require('./routes/ability');
 
 var app = express();
