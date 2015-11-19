@@ -2,6 +2,8 @@ var express = require('express');
 var pokeapi = require('pokenode');
 var router = express.Router();
 
+var poster = {};
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var data = {};
@@ -10,5 +12,4 @@ router.get('/', function(req, res, next) {
   data.description="Bulbaaaaaaaaaaaaaaaaaaaaaaaaaa saur"
   res.render('pokemon', { title: 'Pokemon wiki', data: data});
 });
-
 module.exports = router;

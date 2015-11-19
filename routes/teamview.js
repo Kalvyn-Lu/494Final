@@ -28,7 +28,6 @@ router.get('/', function(req, res, next) {
         moncount++;
     });
   }
-  while (moncount < 6);
   res.render('teamview', { title: 'Express', data: mons });
 });
 
