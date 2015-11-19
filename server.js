@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/news', news);
 app.use('/teamview', teamview);
-app.use('/wiki',wiki)
+app.use('/pokemon',wiki)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
