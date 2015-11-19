@@ -1,5 +1,29 @@
 #wrapper {
-  margin-top: 100px;
+  margin-top: 80px;
+}
+
+#download {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 14pt;
+  background-color: #333333;
+  border: solid 1px;
+  border-top-color: #555555;
+  border-left-color: #555555;
+  border-right-color: #222222;
+  border-bottom-color: #222222;
+  border-radius: 10px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#download:hover {
+  background-color: #666666;
+}
+
+#download:active {
+  background-color: #333333;
 }
 
 .monster {

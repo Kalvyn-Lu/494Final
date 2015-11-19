@@ -12,8 +12,24 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  var data = [bulbasaur, bulbasaur];
-  res.render('teamview', { title: 'Express', data: data });
+  var mons = [];
+  var moncount = 0;
+  for (var i = 0; i < 6; i++) {
+    var id = Math.floor(Math.random() * 721);
+    console.log("Looking for " + id);
+    pokeapi.pokemon(id, function(err, data) {
+        console.log("Found " + id);
+        if (err) {
+            console.log(err);
+        }
+        else {
+            mons[i] = data;
+        }
+        moncount++;
+    });
+  }
+  while (moncount < 6);
+  res.render('teamview', { title: 'Express', data: mons });
 });
 
 module.exports = router;

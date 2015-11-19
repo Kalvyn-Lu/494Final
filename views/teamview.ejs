@@ -18,6 +18,10 @@
 
 <div id="wrapper">
 
+<div id="download" class="container">
+    Download this team!
+</div>
+
 <%
 var abilities = [] ;
 var moves = [];
@@ -73,4 +77,45 @@ var moves = [];
 
 </div>
 </body>
+
+<script type="text/javascript">
+
+Downloadify.create('download',{
+    filename: function() { return "myteam.txt" },
+    data: function () {
+        return [
+        <%
+            for (var i = 0; i < data.length; i++) {
+                var mon = data[i];
+            %>
+                "
+                <%=mon.name%> @ Leftovers\n
+                Trait: <%=abilities[i]%>\n
+                EVs: 85 HP/ 85 Atk / 85 Def / 85 SAtk / 85 SDef / 85 Spd\n
+                Hardy Nature\n
+            <%
+                for (var m = 0; m < moves[i].length; m++) {
+                %>
+                    - <%=moves[i][m]%>\n
+                <%
+                }
+                %>"
+                <%
+            }
+        %>
+        ].join("\n");
+    },
+    onComplete: function () {
+        document.getElementById("download").innerHTML = "File downloaded!";
+    },
+    onCancel: function () {
+        document.getElementById("download").innerHTML = "Download Canceled!";
+    },
+    onError: function () {
+        document.getElementById("download").innerHTML = "Oops! Something went wrong!";
+    }
+});
+
+</script>
+
 </html>
