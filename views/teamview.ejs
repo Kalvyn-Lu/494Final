@@ -24,22 +24,25 @@
 
 <%
 var abilities = [];
-var abilityids = [];
+var moveids = [];
 var moves = [];
     for (var x = 0; x < data.length; x++) {
         var mon = data[x];
         var i = Math.floor(Math.random() * mon.abilities.length);
         abilities.push(mon.abilities[i].name.toUpperCase());
-        abilityids.push(parseInt(
-            mon.abilities[i].resource_uri.split("/")[4]
-        ));
         moves[x] = [];
+        moveids[x] = [];
         var nummoves = 4;
         if (mon.moves.length < 4) {
             nummoves = mon.moves.length;
         }
         for (var i = 0; i < nummoves; i++) {
-            moves[x].push(mon.moves[Math.floor(Math.random() * mon.moves.length)].name.toUpperCase());
+            var id = Math.floor(Math.random() * mon.moves.length);
+            moves[x].push(mon.moves[id].name.toUpperCase());
+            moveids[x].push(parseInt(
+                mon.moves[id].resource_uri.split("/")[4]
+            ));
+
         }
         %>
 <div class="monster container-fluid">
@@ -62,16 +65,18 @@ var moves = [];
         }
         %>
         <div class="monability type notype col-xs-12 col-sm-4">
-            <a href="/ability?id=<%=abilityids[x]%>">
-                <%=abilities[x].toUpperCase() %>
-            </a>
+            <%=abilities[x].toUpperCase() %>
         </div>
     </div>
     <div class="row">
         <%
         for (var i = 0; i < moves[x].length; i++) {
             %>
-            <div class="monmove col-xs-6"><%=moves[x][i]%></div>
+            <div class="monmove col-xs-6">
+                <a href="/move?id=<%=moveids[x][i]%>">
+                    <%=moves[x][i]%>
+                </a>
+            </div>
             <%
         }%>
     </div>

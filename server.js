@@ -7,9 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var teamview = require('./routes/teamview');
-var pokemon = require('./routes/pokemon');
 var move = require('./routes/move');
-var ability = require('./routes/ability');
 
 var app = express();
 
@@ -27,9 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/teamview', teamview);
-app.use('/pokemon',pokemon)
 app.use('/move',move);
-app.use('/ability',ability);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
