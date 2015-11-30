@@ -18,10 +18,6 @@
 
 <div id="wrapper">
 
-<div id="download" class="container">
-    Download this team!
-</div>
-
 <%
 var abilities = [];
 var moveids = [];
@@ -72,11 +68,11 @@ var moves = [];
         <%
         for (var i = 0; i < moves[x].length; i++) {
             %>
-            <div class="monmove col-xs-6">
-                <a href="/move?id=<%=moveids[x][i]%>">
+            <a href="/move?id=<%=moveids[x][i]%>">
+                <div class="monmove col-xs-6">
                     <%=moves[x][i]%>
-                </a>
-            </div>
+                </div>
+            </a>
             <%
         }%>
     </div>
@@ -91,6 +87,6 @@ var moves = [];
 </div>
 </body>
 
-<script src="/public/script.js"></script>
+<script src="script.js"></script>
 
 </html>
